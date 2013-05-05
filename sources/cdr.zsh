@@ -9,8 +9,8 @@
 function zaw-src-cdr () {
     setopt local_options extended_glob
     candidates=(${${(f)"$(cdr -l)"}##<-> ##})
-    actions=(zaw-src-cdr-cd zaw-src-cdr-insert zaw-src-cdr-prune)
-    act_descriptions=("cd" "insert" "prune")
+    actions=(zaw-src-cdr-cd zaw-src-cdr-insert zaw-src-cdr-prune zaw-callback-copy-to-clipboard)
+    act_descriptions=("cd" "insert" "prune" "copy to clipboard")
     options+=(-m)
 }
 

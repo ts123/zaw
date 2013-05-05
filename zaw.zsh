@@ -197,6 +197,9 @@ function zaw-callback-edit-file() {
     zle accept-line
 }
 
+function zaw-callback-copy-to-clipboard() {
+    echo -n "${(j:; :)@}" | pbcopy
+}
 
 # load zaw sources
 setopt local_options extended_glob
